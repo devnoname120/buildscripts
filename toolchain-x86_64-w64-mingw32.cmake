@@ -7,6 +7,7 @@ set(CMAKE_SYSTEM_PROCESSOR x86_64)
 # which compilers to use for C and C++
 SET(CMAKE_C_COMPILER x86_64-w64-mingw32-gcc)
 SET(CMAKE_CXX_COMPILER x86_64-w64-mingw32-g++)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static")
 SET(CMAKE_RC_COMPILER x86_64-w64-mingw32-windres)
 
 # here is the target environment located
